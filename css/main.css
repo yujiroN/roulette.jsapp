@@ -1,0 +1,138 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ここから */
+
+body {
+    user-select: none;
+    background-color: #ececec;
+    font-family: 'Vollkorn', serif;
+}
+
+.roulette {
+    text-align: center;
+    padding: 50px 50px 0 50px;
+}
+
+.roulette h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.roulette p {
+    padding-bottom: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.roulette__box {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.first .roulette__box:not(:first-child) {
+    margin-left: 10px;
+}
+.second .roulette__box:not(:first-child) {
+    margin-left: 10px;
+}
+
+
+/* btn */
+.btn {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.btn__item {
+    cursor: pointer;
+}
+
+.btn__item:hover {
+    background-color: #5a5a5a;
+    color: #fff;
+    transition: all .3s;
+}
+
+
+/* .confirm {
+    background-color: pink;
+} */
+.selected {
+    background-color: sienna;
+}
+
+
+/* レスポンシブ */
+/* medium screen */
+@media (max-width: 600px) {
+    .roulette h1 {
+        font-size: 15px;
+    }
+    .roulette p {
+        font-size: 10px;
+    }
+    .roulette__box h2 {
+        font-size: 14px;
+    }
+}
+
+/* large screen */
+@media (min-width: 800px) {
+
+}
